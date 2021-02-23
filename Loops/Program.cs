@@ -7,14 +7,14 @@ namespace Loops
         static void Main(string[] args)
         {
             //For loops
-            for (int i = 0; i <= 10; i++){
-                Console.WriteLine(i + "i");
-            }
+            //for (int i = 0; i <= 10; i++){
+            //    Console.WriteLine(i + "i");
+            //}
 
-            for (int count = 0; count < 20; count += 2)
-            {
-                Console.WriteLine(count + "count");
-            }
+            //for (int count = 0; count < 20; count += 2)
+            //{
+            //    Console.WriteLine(count + "count");
+            //}
 
             //Do While Loops
             //int hello = 0;
@@ -33,25 +33,36 @@ namespace Loops
 
             //while loop
 
-            int counter = 0;
-            while(counter < 10)
+            //int counter = 0;
+            //while(counter < 10)
+            //{
+            //    Console.WriteLine(counter);
+            //    counter++;
+            //}
+
+            //int people = 0;
+            //string enteredText = "";
+            //while (enteredText.Equals(""))
+            //{
+            //    Console.WriteLine("Please press enter to increase amount by one and anything else + enter if you want to finish counting.");
+            //    enteredText = Console.ReadLine();
+
+            //    people++;
+            //    Console.WriteLine("Current people count is {0}", people);
+            //}
+            //Console.Read();
+
+            //break and continue
+            for (int i=0; i <10; i++)
             {
-                Console.WriteLine(counter);
-                counter++;
+                Console.WriteLine(i);
+                if(i == 3)
+                {
+                    Console.WriteLine("At 3, we skip!");
+                    continue;
+                }
+                Console.WriteLine(i);
             }
-
-            int people = 0;
-            string enteredText = "";
-            while (enteredText.Equals(""))
-            {
-                Console.WriteLine("Please press enter to increse amount by one and anything else + enter if you want to finish counting.");
-                enteredText = Console.ReadLine();
-
-                people++;
-                Console.WriteLine("Current people count is {0}", people);
-            }
-            Console.Read();
-
         }
     }
 }
